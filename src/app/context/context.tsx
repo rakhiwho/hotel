@@ -10,13 +10,11 @@ export function UserContextProvider() {
 export interface IContext {
   auth: boolean;
   add: boolean;
-  setAdd(dis: boolean): void;
+  setAdd(add: boolean): void;
   book: boolean;
-  setBook(dis: boolean): void;
-  user: string | null;
-  setUser(user: string): void;
+  setBook(book: boolean): void;
   hotel: string[]; // Updated type
-  setHotel: React.Dispatch<React.SetStateAction<string[]>>; // Updated type
+  setHotel(hotel : string[]):void; // Updated type
 }
 
 const defaultval: IContext = {
@@ -25,8 +23,6 @@ const defaultval: IContext = {
   setAdd: () => null,
   book: false,
   setBook: () => null,
-  user: "",
-  setUser: () => null,
   hotel: [],
   setHotel: () => null,
 };

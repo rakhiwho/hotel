@@ -1,5 +1,5 @@
 'use client'
-import { IGuest } from '@/interface/guest';
+import { IGuest } from '@/interface/IGuest';
 import axios from 'axios'
 import React ,{useState} from 'react'
 interface Guest{

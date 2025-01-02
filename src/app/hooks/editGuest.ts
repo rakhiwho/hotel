@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import { IGuest } from '@/interface/guest'
+import { IGuest } from '@/interface/IGuest'
 function EditGuest() {
     const [loading ,  setLoading] = useState(false)
 

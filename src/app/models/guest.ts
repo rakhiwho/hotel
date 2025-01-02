@@ -1,42 +1,55 @@
-import mongoose, { Schema, model , models } from "mongoose";
-import { IGuest } from "@/interface/guest";
-const guestShema: Schema<IGuest> = new mongoose.Schema(
-  {
+import mongoose, { Schema, Document } from "mongoose";
+ 
+
+// interface IGuest extends Document {
+//   fullName :string;
+//   mobileNumber:string;
+//   reason :string;
+//   emailID:string;
+//   address :string;
+//   start :string;
+//   end:string;
+//   IDProofNumber:string;
+// }
+ 
+const guestSchema = new mongoose.Schema({
     fullName: {
       type: String,
-      required:  true,
-      
+      required: true,
     },
     mobileNumber: {
       type: String,
       required: true,
     },
-     emailID: {
+    reason: {
       type: String,
-      required: false,
+      required: true,
     },
-    reason :{
+    emailID: {
       type: String,
-      required: false,
+      required: true,
     },
-    address :{
+   
+    address: {
       type: String,
       default: false,
-
     },
-     start:{
-        type :String,
+    start: {
+      type: String,
+      required: true,
     },
-     end:{
-        type :String,
+    end: {
+      type: String,
+      required: true,
     },
-     IDProofNumber:{
-        type :String,
-    }
+    IDProofNumber: {
+      type: String,
+      required: true,
+    },
   },
   { timestamps: true }
 );
- 
- 
-const   GuestModel = models.guest || model<IGuest>("guest",  guestShema);
-export default   GuestModel;
+
+const GuestModel = mongoose.model("Guest", guestSchema);
+
+export default GuestModel;

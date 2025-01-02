@@ -5,4 +5,5 @@ export interface IHotel extends Document {
   owner: string;
   logo?: string;
   address?: string;
+  guest:[string];
 }
