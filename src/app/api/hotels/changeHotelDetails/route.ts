@@ -2,7 +2,7 @@ import HotelModel from "@/app/models/hotel";
 import mongoose from "mongoose";
 import { NextRequest, NextResponse } from "next/server";
 
-export async function PUT(req: NextRequest, res: NextRequest) {
+export async function PUT(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
 
@@ -18,7 +18,6 @@ export async function PUT(req: NextRequest, res: NextRequest) {
     const _id = new mongoose.Types.ObjectId(id);
     const hotel = await HotelModel.findById(_id);
     if (!hotel) {
-       
       return NextResponse.json({ type: "hotel not found" }, { status: 404 });
     }
     if (hotelName) {
