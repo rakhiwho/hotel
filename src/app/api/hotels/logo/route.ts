@@ -38,7 +38,7 @@ export async function POST(req: NextRequest) {
         { folder: "next-cloudinay" },
         (error, result) => {
           if (error) reject(error);
-          else resolve(result as cloudinaryUpload);
+          else resolve(result as any);
         }
       );
 
