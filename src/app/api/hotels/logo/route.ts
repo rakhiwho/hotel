@@ -16,7 +16,7 @@ interface cloudinaryUpload {
   [key: string]: any;
 }
 
-export async function POST(req: NextRequest, res: NextRequest) {
+export async function POST(req: NextRequest) {
   try {
     const formData = await req.formData();
     const file = formData.get("file") as File | null;
