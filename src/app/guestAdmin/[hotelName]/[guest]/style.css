@@ -1,0 +1,13 @@
+input{
+    height: 2rem;
+    width: 16rem;
+    font-size: 1rem;
+}
+
+button{
+    height: 2rem;
+    width: 16rem;
+    font-size: 1rem;
+    align-content: center;
+    padding-bottom: 2%;
+}

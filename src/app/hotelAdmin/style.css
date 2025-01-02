@@ -1,0 +1,35 @@
+.bg_animation:hover {
+    background-color: rgba(6, 61, 42,0.2);
+    animation: bg ease-in 800;
+}
+
+@keyframes bg {
+    0% {
+        background:rgba(6, 61, 42,0.0) ;
+    }
+    50% {
+        background:rgba(6, 61, 42,0.1) ;
+    }
+    100% {
+       background-color:  rgba(6, 61, 42,0.2)
+    }
+}
+
+
+.error {
+     position: absolute;
+     top: 0%;
+    animation: error ease-in 1s;
+}
+
+@keyframes error {
+    0% {
+  top: 10%;
+    }
+    50% {
+        top: 5%;
+    }
+    100% {
+        top: 0%;
+    }
+}

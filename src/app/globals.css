@@ -19,3 +19,92 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+.bg_url{
+  background-image: url(./url/bg.webp) ;
+  image-rendering: auto;
+  background-repeat: no-repeat;
+  background-size: cover; /* Makes the image cover the entire background */
+  background-position: center; /* Centers the image */
+}
+.bg_city{
+  background-image: url('./url/city.gif') ;
+  image-rendering: auto;
+  background-repeat: no-repeat;
+  background-size: cover; /* Makes the image cover the entire background */
+  background-position: center; /* Centers the image */
+}
+.bg_city1{
+  background-image: url('./url/gify.gif') ;
+  image-rendering: auto;
+  background-repeat: no-repeat;
+  background-size: cover; /* Makes the image cover the entire background */
+  background-position: center; /* Centers the image */
+}
+.bg_city3{
+  background-image: url('./url/git3.gif') ;
+  image-rendering: auto;
+  background-repeat: no-repeat;
+  background-size: cover; /* Makes the image cover the entire background */
+  background-position: center; /* Centers the image */
+}
+.blur-edges {
+  position: relative;
+  background: url('./url/gif2.webp') center/cover no-repeat;
+   top: -5vh;
+   right: 2vw;
+  margin: 50px auto;
+  overflow: hidden;
+   filter: blur(2px) opacity(0.7) ;
+}
+  
+ 
+
+.bg_gif{
+   background-image:url(./url/gif2.webp) , url(./url/gif3.webp) ;
+  image-rendering: auto;
+  background-repeat: no-repeat ,no-repeat , no-repeat;
+  background-size: cover , contain ; /* Makes the image cover the entire background */
+  background-position: center ; /* Centers the image */
+}
+.bg_gif1{
+  background-image: url(./url/git.gif)  , url(./url/gif3.webp) ;
+ image-rendering: auto;
+ background-repeat: no-repeat ,no-repeat , no-repeat;
+ background-size: cover , contain ; /* Makes the image cover the entire background */
+ background-position: center ; /* Centers the image */
+}
+
+.dis{
+  display: none;
+}
+ 
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+
+  .dis{
+    display: inline;
+  }
+ 
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  
+.dis{
+  display: inline;
+}
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1399.98px) {
+   
+.dis{
+  display: inline;
+}
+}
+
+
+@media only screen and (min-width: 1400px) {
+   
+.dis{
+  display: inline;
+}
+}
