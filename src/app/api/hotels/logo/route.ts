@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
   try {
     const formData = await req.formData();
     const file = formData.get("file") as File | null;
-    const id = formData.get("id") as File | null;
+    const id = formData.get("id") as string | null;
     if (!file) {
    
       return NextResponse.json({ type: "file not iploaded" }, { status: 400 });
