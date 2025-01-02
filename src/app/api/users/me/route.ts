@@ -6,7 +6,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 db();
 
-export async function GET(req: NextRequest, res: NextResponse) {
+export async function GET(req: NextRequest) {
   try {
     const userID = await getDataFromToken(req);
     if (!userID || typeof userID === "object") {
